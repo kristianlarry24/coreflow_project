@@ -1,0 +1,5 @@
+C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\build\zstd-sys-9de8c5645c31af57\build_script_build-9de8c5645c31af57.d: C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zstd-sys-2.0.16+zstd.1.5.7\build.rs
+
+C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\build\zstd-sys-9de8c5645c31af57\build_script_build-9de8c5645c31af57.exe: C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zstd-sys-2.0.16+zstd.1.5.7\build.rs
+
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zstd-sys-2.0.16+zstd.1.5.7\build.rs:

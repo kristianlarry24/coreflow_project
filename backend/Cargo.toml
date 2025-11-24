@@ -1,0 +1,17 @@
+[package]
+name = "coreflow_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { version = "4", features = ["macros"] }
+actix-files = "0.6"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive" ] }
+serde_json = "1.0"
+rusqlite = { version = "0.29", features = ["bundled"] }
+sysinfo = "0.29"
+chrono = { version = "0.4", features = ["serde"] }
+which = "4.4"
+# CORREÇÃO: Usando underscore (_) para o nome correto da crate
+is_elevated = "0.1.0"

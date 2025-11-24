@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreFlow | Terminal de Otimização (Rust Native)</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div id="login-screen" class="login-container">
+        <h2>CoreFlow Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit" class="action-button primary-btn">Entrar</button>
+            <p id="login-message" style="color: red; margin-top: 10px;"></p>
+        </form>
+    </div>
+    <div class="container" id="main-content" style="display: none;">
+        
+        <img src="images/windows.png" alt="Windows Logo" class="corner-logo top-left">
+        <img src="images/linux.png" alt="Linux Logo" class="corner-logo top-right">
+        <img src="images/android.png" alt="Android Logo" class="corner-logo bottom-left">
+        <img src="images/apple.png" alt="Apple Logo" class="corner-logo bottom-right">
+        
+        <header class="main-header">
+            <h1>💻 <span class="text-spacer-lg">CoreFlow | Terminal de Otimização (Rust Native)</span> 👾</h1>
+            <p class="header-subtitle">Desenvolvido para profissionais de TI e usuários exigentes.</p>
+        </header>
+        
+        <div class="status-card">
+            <h2>📊 <span class="text-spacer">Status do Sistema e Diagnóstico</span></h2>
+            <p id="status-message">Aguardando conexão com a API...</p>
+            
+            <button id="update-hardware-btn" class="action-button secondary-btn" style="margin-top: 10px;">
+                🔎 <span class="text-spacer">Verificação do Hardware e Processos Ativos</span>
+            </button>
+            
+            <pre id="hardware-details"></pre>
+        </div>
+
+        <h2>⚙️ <span class="text-spacer">Menu de Ações Rápidas</span></h2>
+        <div class="action-menu">
+            
+            <button class="action-button primary-btn" data-action="limpar_temp">1. 🗑️ <span class="text-spacer">Limpar Arquivos TEMP (%TEMP%)</span></button>
+            <button class="action-button primary-btn" data-action="otimizar_disco">2. ⚡ <span class="text-spacer">Otimizar Disco (C:)</span></button>
+            <button class="action-button primary-btn" data-action="checar_integridade">3. ✅ <span class="text-spacer">Checar Integridade (SFC)</span></button>
+            <button class="action-button primary-btn" data-action="limpar_dns">4. 🌐 <span class="text-spacer">Limpar Cache DNS</span></button>
+            <button class="action-button primary-btn" data-action="reiniciar_servicos">5. 🔄 <span class="text-spacer">Reiniciar Serviços Windows</span></button>
+            <button class="action-button primary-btn" data-action="limpar_logs">6. 📜 <span class="text-spacer">Limpar Logs de Eventos</span></button>
+            <button class="action-button primary-btn" data-action="listar_redes">7. 📶 <span class="text-spacer">Admin: Listar Adaptadores de Rede</span></button>
+            
+            <button class="action-button primary-btn" data-action="disk_health">8. 💾 <span class="text-spacer">Saúde do Disco (S.M.A.R.T.)</span></button>
+            <button class="action-button primary-btn" data-action="startup_apps">9. 🚀 <span class="text-spacer">Apps de Inicialização</span></button>
+            <button class="action-button primary-btn" data-action="game_mode">10. 🎮 <span class="text-spacer">Ativar Game Mode</span></button>
+            <button class="action-button primary-btn" data-action="work_mode">11. 💼 <span class="text-spacer">Ativar Work Mode</span></button>
+            <button id="download-log-btn" class="action-button log-btn">12. 📄 <span class="text-spacer">Baixar Log de Execução</span></button>
+        </div>
+
+        <h2>🗒️ <span class="text-spacer">Log de Operações e Retornos</span></h2>
+        <div class="console-container">
+            <pre id="console-log">Console: Pronto para receber comandos.</pre>
+        </div>
+        
+        <footer>
+            © 2025 CoreFlow Project - Tecnologia Rust, JavaScript e SQLite.
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

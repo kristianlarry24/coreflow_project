@@ -1,0 +1,305 @@
+/*
+ * CoreFlow Frontend - styles.css
+ * Versão Final: Tema escuro, tecnológico (Ciano Elétrico), alinhamento ajustado e logos nos cantos.
+ */
+
+body {
+    font-family: 'Consolas', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fundo mais escuro */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    position: relative; /* ESSENCIAL para posicionar as logos */
+    min-height: 100vh; /* Garante que o body ocupa a altura total da viewport */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    /* AJUSTE: Otimizado o padding. O padrão é 30px. */
+    padding: 30px; 
+    padding-top: 60px; /* NOVO: Adiciona espaço no topo, empurrando o conteúdo para baixo */
+    padding-bottom: 100px; /* Mantido o espaço para a parte inferior */
+    
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: relative; 
+    z-index: 10; 
+}
+
+/* ---------------------------------- */
+/* LOGOS NOS CANTOS */
+/* ---------------------------------- */
+.corner-logo {
+    position: absolute;
+    width: 60px; /* Tamanho padrão para as logos */
+    height: auto;
+    opacity: 0.3; /* Levemente transparente para não roubar o foco */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ficam atrás do conteúdo principal */
+}
+
+.corner-logo:hover {
+    opacity: 0.8; /* Fica mais visível ao passar o mouse */
+}
+
+.top-left {
+    top: 20px; /* Posição Original */
+    left: 20px;
+}
+
+.top-right {
+    top: 20px; /* Posição Original */
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 20px; 
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px; 
+    right: 20px;
+}
+
+/* ---------------------------------- */
+/* CABEÇALHO (Títulos Principal e Subtítulo Centralizados) */
+/* ---------------------------------- */
+.main-header {
+    text-align: center; /* Centraliza H1 e Subtítulo */
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #00FFFF; /* Ciano Elétrico (Cor de destaque) */
+    padding-bottom: 10px;
+    margin-bottom: 5px; 
+    font-weight: 900;
+}
+
+.header-subtitle {
+    color: #a0a0a0;
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+    
+    text-align: center; 
+    
+    border-bottom: 1px solid #00FFFF30;
+    padding-bottom: 15px;
+}
+
+/* ---------------------------------- */
+/* TÍTULOS DE SEÇÃO (H2) */
+/* ---------------------------------- */
+h2 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 5px;
+    text-align: left; /* Padrão: títulos de seção à esquerda */
+}
+
+/* ---------------------------------- */
+/* STATUS CARD (Todo o conteúdo CENTRALIZADO) */
+/* ---------------------------------- */
+.status-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00FFFF; 
+    
+    text-align: center; /* CENTRALIZA TODO O CONTEÚDO DA CAIXA */
+}
+
+.status-card h2 {
+    text-align: center; /* Garante que o H2 interno seja centralizado */
+}
+
+
+/* --- Regras para Espaçamento de Emojis --- */
+
+/* Espaço padrão para o texto que vem após o emoji nos botões e títulos de seção */
+.text-spacer {
+    margin-left: 8px; /* 8 pixels de separação após o emoji */
+}
+
+/* Espaço maior para o título principal (se necessário) */
+.text-spacer-lg {
+    margin-left: 12px; /* 12 pixels de separação no título principal */
+}
+
+/* --- Botões de Ação --- */
+.action-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.action-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2); 
+}
+
+/* TODOS OS BOTÕES DE AÇÃO SÃO PRIMARY AGORA (Fundo Ciano) */
+.primary-btn {
+    background-color: #00FFFF; 
+    color: #1e1e1e; 
+}
+
+.primary-btn:hover:not(:disabled) {
+    background-color: #00e5e5;
+}
+
+/* Mantendo o secondary para o botão de 'Atualizar Hardware' */
+.secondary-btn {
+    background-color: #333;
+    color: #ccc;
+    border: 1px solid #00FFFF;
+}
+
+.secondary-btn:hover:not(:disabled) {
+    background-color: #4a4a4a;
+}
+
+/* --- Detalhes de Hardware (Mantido Ciano) --- */
+
+#hardware-details {
+    white-space: pre-wrap; 
+    font-family: Consolas, monospace;
+    font-size: 0.9em;
+    color: #00FFFF; 
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* --- Console de Log --- */
+
+.console-container {
+    background-color: #000;
+    border: 1px solid #00FFFF;
+    padding: 15px;
+    border-radius: 6px;
+    height: 300px;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.15); 
+}
+
+#console-log {
+    white-space: pre-wrap;
+    font-family: Consolas, monospace;
+    font-size: 0.85em;
+    color: #0f0; /* Mantido verde neon para o texto padrão/info */
+}
+
+/* Rodapé (BRANCO) */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: #FFF; /* Cor do texto alterada para Branco */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .action-menu {
+        grid-template-columns: 1fr;
+    }
+    /* Ajusta a posição das logos para telas menores */
+    .corner-logo {
+        width: 40px;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+    .top-right { right: 10px; left: auto;}
+    .bottom-left { bottom: 20px; top: auto;}
+    .bottom-right { bottom: 20px; right: 10px; top: auto; left: auto;}
+
+}
+/* ---------------------------------------------------------------- */
+/* NOVOS ESTILOS PARA TELA DE LOGIN */
+/* ---------------------------------------------------------------- */
+
+.login-container {
+    background-color: #2a2a2a; /* Cor de fundo do status card */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 100px;
+    border: 1px solid #00FFFF; /* Borda ciano */
+}
+
+.login-container h2 {
+    color: #00FFFF;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    background-color: #121212; /* Fundo do body */
+    color: #f0f0f0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+/* Centraliza o body quando apenas o login estiver visível */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+
+/* Ajuste para o container principal aparecer corretamente após o login */
+.container {
+    margin: 20px auto;
+}
+
+/* Estilo para o botão de Log */
+.log-btn {
+    background-color: #FFD700; /* Amarelo/Dourado para destaque */
+    color: #1e1e1e;
+}
+
+.log-btn:hover:not(:disabled) {
+    background-color: #e6c200;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+}

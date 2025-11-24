@@ -1,0 +1,11 @@
+C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\deps\which-f230f676b2db1a6d.d: C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\lib.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\checker.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\error.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\finder.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\helper.rs
+
+C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\deps\libwhich-f230f676b2db1a6d.rlib: C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\lib.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\checker.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\error.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\finder.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\helper.rs
+
+C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\deps\libwhich-f230f676b2db1a6d.rmeta: C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\lib.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\checker.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\error.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\finder.rs C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\helper.rs
+
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\lib.rs:
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\checker.rs:
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\error.rs:
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\finder.rs:
+C:\Users\larry\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\which-4.4.2\src\helper.rs:

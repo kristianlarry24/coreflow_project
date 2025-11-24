@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=C:\Users\larry\OneDrive\Desktop\Nova pasta (3)\coreflow_2.0\backend\target\debug\build\mime_guess-241449a46ecf3bae\out\mime_types_generated.rs
